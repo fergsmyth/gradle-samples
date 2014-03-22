@@ -7,3 +7,9 @@ buildscript {
     }
 }
 apply plugin: 'lesscss'
+
+lesscss {
+	source = fileTree('less')
+	dest = 'compiled'
+	compress = true
+}
