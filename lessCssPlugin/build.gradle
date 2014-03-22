@@ -13,3 +13,7 @@ lesscss {
 	dest = 'compiled'
 	compress = true
 }
+
+task compileLess() {
+	dependsOn 'lesscss'
+}
