@@ -7,6 +7,7 @@ lessCssPlugin:
 3. Adds a dependency from compileLess task to lesscss. Example of how to add to build process.
 
 **Note**
+
 Error:
 	
 Task with path 'de.obqo.gradle.lesscss.LessExtension_Decorated@5bda657' not found in root project 'lessCssPlugin'.
