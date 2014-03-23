@@ -1,0 +1,8 @@
+apply plugin : 'java'
+sourceSets{
+	intTest
+}
+
+dependencies {
+	intTestCompile 'junit:junit:4.11'
+}
