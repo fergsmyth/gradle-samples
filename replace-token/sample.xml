@@ -1,0 +1,3 @@
+<sample id="sample1">
+	<property name="myprop1" value="@myproperty@" />
+</sample>

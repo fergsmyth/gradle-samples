@@ -1,0 +1,9 @@
+task copy(type:Copy){
+	from "sample.xml"
+	into ("$buildDir/sample")
+	def myProps = new Properties()
+	file("sample.properties").withInputStream{
+		myProps.load(it);
+	}
+	filter(org.apache.tools.ant.filters.ReplaceTokens, tokens: myProps)
+}
