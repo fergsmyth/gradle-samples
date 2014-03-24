@@ -1,8 +1,26 @@
 apply plugin : 'java'
+
 sourceSets{
-	intTest
+    integration
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-	intTestCompile 'junit:junit:4.11'
+    compile 'junit:junit:4.11'
+    integrationCompile sourceSets.main.output
+    integrationCompile configurations.testCompile
+    integrationCompile sourceSets.test.output
+    integrationRuntime configurations.testRuntime
 }
+
+
+task integrationTest(type: Test) {
+    testClassesDir = sourceSets.integration.output.classesDir
+    classpath = sourceSets.integration.runtimeClasspath
+}
+
+check.dependsOn integrationTest
+integrationTest.dependsOn test
