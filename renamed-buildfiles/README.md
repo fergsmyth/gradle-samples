@@ -1,6 +1,7 @@
 Sample multi project to show how to rename build.gradle files to the name of the sub project.
 
 *Note*
+
 For this project: 
 
 1. The java plugin is applied to all sub projects configuring all projects with the default tasks (e.g compile, jar, test)
@@ -15,4 +16,6 @@ Pitfalls:
 
 2. Be careful to rename the child project build.gradle files correctly as it may not be obvious that the correct build.gradle isn't being found. By applying the java plugin to all sub projects running a "gradle build" will execute all tasks with default settings per sub project even if a sub project has no build.gradle. 
 
-To see examples of Pitfall 2 try executing line 6 out in the settings.gradle. In one case subproject 1 will print otherwise subproject 2 will print. Subproject 3 will never print.
+To see examples of Pitfall 2 try executing line 6 out in the settings.gradle. 
+In one case subproject 1 will print otherwise subproject 2 will print. 
+Subproject 3 will never print.
