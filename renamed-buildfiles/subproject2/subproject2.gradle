@@ -1,0 +1,5 @@
+task printout(){
+	println "Subproject 2 printout"
+}
+
+jar.dependsOn printout
