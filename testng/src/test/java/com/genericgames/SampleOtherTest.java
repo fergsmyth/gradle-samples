@@ -15,6 +15,6 @@ public class SampleOtherTest {
 
     @Test
     public void testIsTrue(){
-        assertTrue(!sample.isTrue());
+        assertTrue(sample.isTrue());
     }
 }
