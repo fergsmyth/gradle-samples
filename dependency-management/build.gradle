@@ -1,0 +1,4 @@
+apply from: 'dependency.gradle'
+subprojects {
+	apply plugin : 'java'
+}
