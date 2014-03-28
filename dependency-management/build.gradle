@@ -1,4 +1,5 @@
-apply from: 'dependency.gradle'
-subprojects {
+apply from: 'dependencies.gradle'
+
+allprojects {
 	apply plugin : 'java'
 }

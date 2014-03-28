@@ -6,6 +6,3 @@ configurations {
 	testing
 }
 
-dependencies {
-	
-}
