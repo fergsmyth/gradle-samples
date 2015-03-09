@@ -1,0 +1,16 @@
+<xsd:schema targetNamespace="urn:com/genericgames/aldo/PCData"
+            xmlns:tns="urn:com/genericgames/aldo/PCData"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+
+    <xsd:complexType name="PCData">
+        <xsd:sequence>
+            <xsd:element name="reference" nillable="false" type="xsd:string" />
+            <xsd:element name="criteria" nillable="false" type="xsd:string" />
+            <xsd:element name="frequency" nillable="false" type="xsd:string" />
+            <xsd:element name="premium" nillable="false" type="xsd:float" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
